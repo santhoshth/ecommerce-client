@@ -41,7 +41,6 @@ function CheckoutProduct({ id, title, price, image, orderPageButton, paymentPage
                         </Link>
                     </p>
                     <p className="checkoutProduct__price">
-                        <small>₹ </small>
                         <strong>{numberFormat(price)}</strong>
                     </p>
                     <div className="checkoutProduct__quantity">
@@ -68,7 +67,6 @@ function CheckoutProduct({ id, title, price, image, orderPageButton, paymentPage
                 </div>
                 {searchPageButton ? null : (
                     <div className="checkoutProduct__subtotal">
-                        <small>₹ </small>
                         <strong>{numberFormat(subTotal)}</strong>
                     </div>
                 )}

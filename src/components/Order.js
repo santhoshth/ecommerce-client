@@ -23,7 +23,7 @@ function Order({ items, totalPrice, createdAt, id, shippingAddress }) {
                     </div>
                     <div className="order__total">
                         TOTAL
-                        <p><small>₹ </small>{numberFormat(totalPrice)}</p>
+                        <p>{numberFormat(totalPrice)}</p>
                     </div>
                     <div className="order__ship">
                         SHIP TO:
