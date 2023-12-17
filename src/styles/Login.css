@@ -1,0 +1,125 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.login__logo {
+    width: 100px;
+    margin: 20px;
+    object-fit: contain;
+}
+
+.login__container {
+    width: 320px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid lightgray; */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login__title {
+    font-size: 28px;
+    font-weight: 520;
+    margin-left: 8px;
+}
+
+.login__form {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__field {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.validation__error {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: 600;
+    color: #d0383f;
+}
+
+.login__form>input {
+    height: 25px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.login__form>button {
+    background: #f0c14b;
+    border: 1px solid lightgray;
+    border-color: #a88734 #9c7e31 #846a29;
+    margin-top: 15px;
+    padding: 7px;
+    color: black;
+    border-radius: 2px;
+}
+
+.login__form>button:hover {
+    background: #f7ca00;
+}
+
+.login__form>button:active {
+    background: #f0c14b;
+}
+
+.login__conditions {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.login__register {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+
+}
+
+.login__registerTitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+
+.login__registerButton {
+    background: #dadada;
+    border: 1px solid darkgray;
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    color: black;
+    border-radius: 2px;
+}
+
+.login__registerButton:hover {
+    background: lightgray;
+}
+
+.login__registerButton:active {
+    background: #dadada;
+}
+
+.link_login {
+    margin-left: 5px;
+    color: #0066c0;
+}

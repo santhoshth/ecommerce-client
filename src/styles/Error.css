@@ -1,0 +1,29 @@
+.error {
+    border: 3px solid #fcf4f4;
+    outline: 1px solid #c40006;
+    border-radius: 3px;
+    color: #c40006;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    min-width: 330px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(255, 124, 124, 0.2), 0 6px 20px 0 rgba(225, 124, 124, 0.19);
+}
+
+.error__icon {
+    width: 35px;
+}
+
+.error__content>span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.error__content>p {
+    color: black;
+    font-size: 13px;
+}

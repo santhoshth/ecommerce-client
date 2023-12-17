@@ -1,0 +1,58 @@
+.account__outer {
+    background-color: white;
+    padding-top: 10px
+}
+
+.account {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    background-color: white;
+    height: 70vh;
+}
+
+.account__title {
+    font-size: 28px;
+    font-weight: 520;
+    padding-left: 10px;
+}
+
+.account__element__container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.account__element {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    width: 297px;
+    height: 70px;
+}
+
+.account__element:hover {
+    background-color: #eeeeee;
+}
+
+.element__icon {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.element__content>span {
+    font-size: 15px;
+    font-weight: 520;
+}
+
+.element__content>p {
+    margin-top: 5px;
+    color: #565959;
+    font-size: 13px;
+}
