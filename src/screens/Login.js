@@ -78,7 +78,7 @@ function Login() {
                         </div>
                         <button type="submit" onClick={e => signIn(e)}>Sign In</button>
                     </form>
-                    <p className="login__conditions">By continuing, you agree to Amazon Fake Clone's Conditions of Use and Privacy Notice. </p>
+                    <p className="login__conditions">By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. </p>
                     <p className="login__registerTitle">New to Amazon?</p>
                     <Link to={redirect ? `/register?redirect=${redirect}` : "/register"}>
                         <button className="login__registerButton" >Create your Amazon account</button>
