@@ -19,7 +19,7 @@ function Subtotal({ total, itemCount }) {
     return (
         <div className="subtotal">
             <p className="subtotal__count">
-                Subtotal ({`${itemCount} ${item}`}):<strong className="subtotal__total">{` ₹ ${numberFormat(total)}`}</strong>
+                Subtotal ({`${itemCount} ${item}`}):<strong className="subtotal__total">{`${numberFormat(total)}`}</strong>
             </p>
             <small className="subtotal__gift">
                 <input type="checkbox" />

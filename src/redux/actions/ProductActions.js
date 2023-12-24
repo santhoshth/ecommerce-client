@@ -4,7 +4,7 @@ import { PRODUCT_CREATE_REVIEW_FAIL, PRODUCT_CREATE_REVIEW_REQUEST, PRODUCT_CREA
 import { PRODUCT_DETAILS_SUCCESS } from './../constants/ProductConstants';
 import { logout } from "./UserActions";
 
-// PRODUCT LIST
+// FETCH PRODUCT LIST
 export const listProduct = (keyword = "") => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_LIST_REQUEST });
@@ -21,7 +21,7 @@ export const listProduct = (keyword = "") => async (dispatch) => {
     }
 }
 
-// SINGLE PRODUCT
+// FETCH SINGLE PRODUCT DETAILS
 export const listProductDetails = (id) => async (dispatch) => {
     try {
         dispatch({ type: PRODUCT_DETAILS_REQUEST });
@@ -39,7 +39,6 @@ export const listProductDetails = (id) => async (dispatch) => {
 }
 
 
-// PRODUCT CREATE REVIEW 
 export const createProductReview = (productId, review) => async (dispatch, getState) => {
     try {
         dispatch({ type: PRODUCT_CREATE_REVIEW_REQUEST });
