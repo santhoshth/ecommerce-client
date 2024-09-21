@@ -157,6 +157,15 @@ function Payment() {
                                 {payError ? <Error error={payError} /> : null}
                             </form>
                         </div>
+                        <div className="payment__additional__info">
+                            <h5>Stripe Payment Integration</h5>
+                            <h5>Currently set in Test Mode</h5>
+                            <h5>(Can be switched to Live Mode for real transactions)</h5>
+                            <h5>Please use the following card details:</h5>
+                            <p>Card Number: 4242 4242 4242 4242</p>
+                            <p>Expiry Date: Any future date (e.g., 12/25)</p>
+                            <p> CVC: Any 3 digits (e.g., 123)</p>
+                        </div>
                     </div>
                 </div>
             </div>

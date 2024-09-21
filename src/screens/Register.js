@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import '../styles/Login.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -45,18 +45,20 @@ function Register() {
         }
     }
 
-    const registerHandle = e => {
+    const registerHandle = useCallback((e) => {
         // to avoid refreshing the page on clicking submit
         e.preventDefault();
+        const nameValidationResponse = nameValidation(name);
+        const emailValidationResponse = emailValidation(email);
+        const passwordValidationResponse = passwordValidation(password);
+        setErrorName(nameValidationResponse);
+        setErrorEmail(emailValidationResponse);
+        setErrorPassword(passwordValidationResponse);
 
-        setErrorName(nameValidation(name));
-        setErrorEmail(emailValidation(email));
-        setErrorPassword(passwordValidation(password));
-
-        if (errorName === "" && errorEmail === "" && errorPassword === "" && name !== "" && email !== "" && password !== "") {
+        if (nameValidationResponse === "" && emailValidationResponse === "" && passwordValidationResponse === "" && name !== "" && email !== "" && password !== "") {
             dispatch(register(name, email, password));
         }
-    }
+    }, [name, email, password, dispatch]);
 
     return (
         <div className="login">

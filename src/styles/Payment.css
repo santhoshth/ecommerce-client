@@ -27,14 +27,27 @@
 }
 
 .payment__title,
-.payment__details {
-    flex: 0.2;
+.payment__details,
+.payment__additional__info {
+    flex: 0.3;
 }
 
 .payment__details {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
+}
+
+.payment__additional__info {
+    margin-left: 20px;
+}
+
+.payment__additional__info>h5 {
+    margin: 2px;
+}
+
+.payment__additional__info>p {
+    margin: 5px;
 }
 
 .payment__content {
